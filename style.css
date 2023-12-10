@@ -1,0 +1,263 @@
+/* Estilos gerais */
+body {
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Estilos do cabeçalho */
+header {
+  font-family: "Libre Baskerville", serif;
+  font-size: 15px;
+  background-color: #5c3015;
+  color: #fff;
+  padding: 10px 0;
+  position: fixed;
+  z-index: 999; /* Garante que o cabeçalho fique acima dos outros elementos */
+  height: 32px;
+  width: 100%;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex; /* Transforma a lista em um flex container */
+  justify-content: center; /* Centraliza os itens na horizontal */
+}
+
+nav ul li {
+  align-items: center;
+  display: inline;
+  margin-right: 20px;
+  margin-top: 7px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+/* Estilos do herói (seção de destaque) */
+.hero {
+  text-align: center;
+  padding: 100px 0;
+  color: #5c3015;
+}
+
+.btn {
+  font-family: "Roboto", sans-serif;
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #d39366;
+  color: #fff;
+  text-decoration: none;
+  margin-top: 20px;
+  border-radius: 10px;
+}
+
+.btn:hover {
+  background-color: #5c3015;
+}
+
+.button-container {
+  text-align: center;
+  margin: 5px;
+}
+
+/* Estilos para outras seções - menu, sobre, contato */
+.menu-items,
+.about,
+.contact {
+  padding: 50px 20px;
+}
+
+/* Estilos para o rodapé */
+footer {
+  text-align: center;
+  padding: 10px 0;
+  background-color: #5c3015;
+  color: #fff;
+}
+
+#inicio,
+#sobre {
+  color: #5c3015;
+  background: #e1c3a8;
+}
+
+#menu,
+#contato {
+  color: #5c3015;
+  background-color: #e8d8ca;
+}
+
+#menu h2 {
+  font-family: "Libre Baskerville", serif;
+  font-size: 35px;
+  text-align: center;
+}
+
+/* Estilos para a seção de início *************************************************/
+.start-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.start-section img {
+  border-radius: 6px;
+}
+
+.text-content {
+  text-align: justify; /* Adiciona justificação ao texto */
+  padding: 6px;
+  margin-top: 50px;
+  margin-left: 8px;
+  margin-right: 8px;
+}
+
+.text-content h1 {
+  font-family: "Libre Baskerville", serif;
+  font-size: 35px;
+}
+.text-content h2 {
+  font-family: "Libre Baskerville", serif;
+  font-size: 35px;
+  text-align: center;
+}
+.image-content {
+  margin-top: 20px; /* Espaçamento entre o texto e a imagem */
+}
+
+.image-content img {
+  max-width: 100%; /* Garante que a imagem não ultrapasse o tamanho do contêiner */
+  height: auto;
+  border-radius: 7px;
+}
+#contato .text-content {
+  text-align: center;
+}
+/* Novos estilos para a seção "Sobre" */
+.about-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.text-content {
+  text-align: center;
+  padding: 50px;
+}
+
+.image-content {
+  margin-top: 20px; /* Espaçamento entre o texto e a imagem */
+}
+
+.image-content img {
+  max-width: 100%; /* Garante que a imagem não ultrapasse o tamanho do contêiner */
+  height: auto;
+}
+
+/* Novos estilos para a seção "Contato" ***************************************/
+.contact-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.text-content {
+  text-align: center;
+  padding: 50px;
+}
+
+.image-content {
+  margin-top: 20px; /* Espaçamento entre o texto e a imagem */
+}
+
+.image-content img {
+  max-width: 100%; /* Garante que a imagem não ultrapasse o tamanho do contêiner */
+  height: auto;
+}
+
+/*menu quadro*/
+.white-frame {
+  background-color: rgb(246, 244, 244);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  max-width: 600px; /* Define a largura máxima */
+  margin: 0 auto; /* Centraliza o contêiner horizontalmente */
+}
+
+.category h3 {
+  display: flex;
+  align-items: center;
+  font-size: 1.2em;
+  margin-top: 20px;
+}
+
+.category h3 i {
+  margin-right: 10px;
+}
+
+/* Estilos para telas maiores */
+@media screen and (min-width: 768px) {
+  .start-section,
+  .about-section,
+  .contact-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .menu-items {
+    text-align: center; /* Centraliza o conteúdo */
+  }
+
+  .menu-list {
+    max-width: 600px; /* Define uma largura máxima */
+    margin: 0 auto; /* Centraliza horizontalmente */
+    text-align: left; /* Alinha o texto à esquerda */
+  }
+
+  .menu-list h3 {
+    margin-top: 20px; /* Espaçamento entre os tipos de itens */
+  }
+
+  .text-content {
+    flex: 1;
+    text-align: justify; /* Adiciona justificação ao texto */
+    padding: 30px 100px;
+    margin: 0 auto; /* Define margens automáticas para centralizar a div */
+    max-width: 600px; /* Defina um tamanho máximo para manter a largura controlada */
+  }
+
+  .text-content h1 {
+    font-size: 50px;
+    text-align: center;
+  }
+
+  .image-content {
+    flex: 1;
+    margin-top: 0;
+    text-align: right;
+    margin: 0;
+  }
+
+  .image-content img {
+    width: 100%;
+    height: auto;
+  }
+
+  .contact-section {
+    flex-direction: row-reverse;
+  }
+  .contact-section .image-content img {
+    max-width: 60%; /* Ajusta a largura máxima da imagem */
+    height: auto; /* Mantém a proporção da imagem */
+    margin: 20px;
+    margin-top: 70px;
+  }
+}
